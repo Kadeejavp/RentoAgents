@@ -70,7 +70,7 @@
             </div>
 
             <div class="form-group col-md-4 col-sm-6">
-              <select class="form-control" name="Type of Property" required>
+              <select class="form-control" name="Type of Property">
                 <optgroup>
                   <option value="" disabled selected hidden>Type of Property</option>
                   <option value="Gated Society">Gated Society</option>
@@ -82,7 +82,7 @@
             </div>
 
             <div class="form-group col-md-4 col-sm-6">
-              <select class="form-control" name="Property Typology" required>
+              <select class="form-control" name="Property Typology">
                 <optgroup>
                   <option value="" disabled selected hidden>Property Typology</option>
                   <option value="1RK">1RK</option>
@@ -109,7 +109,7 @@
             </div>
 
             <div class="form-group col-sm-4">
-              <input type="text" class="form-control" name="Rent" placeholder="Rent">
+              <input type="text" class="form-control" name="Rent Amount" placeholder="Rent Amount">
             </div>
 
             <div class="form-group col-sm-4">
@@ -134,7 +134,7 @@
             </div>
 
             <div class="form-group col-sm-4">
-              <select class="form-control" name="No of Persons" id="No-of-Persons" required>
+              <select class="form-control" name="No of Persons" id="No-of-Persons">
                 <optgroup>
                   <option value="" disabled selected hidden>No of Persons</option>
                   <option value="1">1</option>
@@ -149,7 +149,7 @@
             </div>
 
             <div class="form-group col-sm-4">
-              <select class="form-control" name="Water" required>
+              <select class="form-control" name="Water">
                 <optgroup>
                   <option value="" disabled selected hidden>Water</option>
                   <option value="Cauvery">Cauvery</option>
@@ -159,7 +159,7 @@
             </div>
 
             <div class="form-group col-sm-4">
-              <select class="form-control" name="Power Backup" required>
+              <select class="form-control" name="Power Backup">
                 <optgroup>
                   <option value="" disabled selected hidden>Power Backup</option>
                   <option value="Available">Available</option>
@@ -170,7 +170,7 @@
             </div>
 
             <div class="form-group col-sm-6">
-              <select class="form-control" name="Parking" required>
+              <select class="form-control" name="Parking">
                 <optgroup>
                   <option value="" disabled selected hidden>Parking</option>
                   <option value="Inside Car Parking">Inside Car Parking</option>
@@ -182,7 +182,7 @@
             </div>
 
             <div class="form-group col-sm-6">
-              <select class="form-control" name="Availability" required>
+              <select class="form-control" name="Availability">
                 <optgroup>
                   <option value="" disabled selected hidden>Availability</option>
                   <option value="Now">Now</option>
@@ -217,7 +217,7 @@
             </div>
 
             <div class="form-group col-sm-6">
-              <select class="form-control" name="Entrance Face" required>
+              <select class="form-control" name="Entrance Face">
                 <optgroup>
                   <option value="" disabled selected hidden>Entrance Face</option>
                   <option value="North">North</option>
@@ -230,7 +230,7 @@
             </div>
 
             <div class="form-group col-sm-6">
-              <select class="form-control" name="Food Type" id="Veg-or-Non-veg" required>
+              <select class="form-control" name="Food Type" id="Veg-or-Non-veg">
                 <optgroup>
                   <option value="" disabled selected hidden>Veg or Non-veg</option>
                   <option value="Veg">Veg</option>
@@ -240,7 +240,7 @@
             </div>
 
             <div class="form-group col-sm-6">
-              <select class="form-control" name="Balcony" required>
+              <select class="form-control" name="Balcony">
                 <optgroup>
                   <option value="" disabled selected hidden>Balcony</option>
                   <option value="1">1</option>
@@ -253,7 +253,7 @@
             </div>
 
             <div class="form-group col-sm-6">
-              <select class="form-control" name="Security/Care Taker" required>
+              <select class="form-control" name="Security/Care Taker">
                 <optgroup>
                   <option value="" disabled selected hidden>Security/Care Taker</option>
                   <option value="Yes">Yes</option>
@@ -333,7 +333,7 @@
           </div>
         </form>
 
-        <div class="text-center" style="margin-top: 2em;"><span id="msg"></span></div>
+        <div class="text-center"><span id="msg"></span></div>
 
       </div>
 
@@ -343,7 +343,7 @@
   </section>
 
   <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzxBw7F8shK_HXKBW8FUFCm-dhKPY9AXcg0VuWnV2-6luYPHP5CriaheoPKe4GBSvk/exec"
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzUo0sB3L_D_8DJXLxvz-PsRKLfElYvSsIBNi1GuYOGrqJmZrFbK6uavpd-bo6nCewU/exec"
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
 
@@ -351,10 +351,10 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-          msg.innerHTML = "Thank you!!We will get back to you soon"
+          msg.innerHTML = "Details Collected"
           setTimeout(function () {
             msg.innerHTML = ""
-          }, 5000)
+          }, 10000)
           form.reset()
         })
         .catch(error => console.error('Error!', error.message))
