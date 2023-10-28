@@ -1,0 +1,97 @@
+body{
+    font-family: monospace;
+}
+
+.section-title{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+#contact{
+    background-color: #9c8464;
+    background-image: linear-gradient(180deg, #9c8464 0%, #b9b173 74%);
+  }
+  
+  #contact select{
+    -webkit-appearance: menulist;
+    appearance: menulist;
+    font-family: monospace;
+    color: rgb(110, 107, 107);
+  }
+  
+  optgroup{
+    font-family: monospace;
+  }
+  
+  #contact ::placeholder{
+    font-family: monospace;
+  }
+  
+  #contact input{
+    font-family: monospace;
+  }
+  
+  #contact input:focus{
+    outline-style: none;
+    box-shadow: none;
+    border: 2px solid;
+    border-color: black;
+  }
+  
+  #contact select:focus{
+    outline-style: none;
+    box-shadow: none;
+    border: 2px solid;
+    border-color: black;
+  }
+  
+  #contact textarea:focus{
+    outline-style: none;
+    box-shadow: none;
+    border: 2px solid;
+    border-color: black;
+  }
+  
+  #contact span{
+    font-family: monospace;
+    font-size: 22px;
+  }
+  
+  .form-group{
+    margin-bottom: 3vh;
+  }
+  
+  #contact textarea{
+    font-family: monospace;
+    color: rgb(110, 107, 107);
+  }
+  
+  #contact input{
+    color: rgb(110, 107, 107);
+  }
+
+  label{
+    font-family: monospace;
+    margin-bottom: 2vh;
+  }
+  
+  input[type="submit"] {
+    width: 100px;
+    background-color: black;
+    color: white !important;
+    padding: 5px;
+    font-family: monospace;
+    border-radius: 3px;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  input[type="submit"]:hover{
+    background-color: #7c6440;
+  }
