@@ -77,8 +77,11 @@
                 <label>Commercials</label>
               </div>
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other1" value="Other" id="otherAvailableFor">
                 <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherAvailableForBox">
+                <input type="text" name="Other Available For" class="form-control" placeholder="Other Available For">
               </div>
             </div>
 
@@ -113,8 +116,11 @@
                 <label>Duplex</label>
               </div>
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other2" value="Other" id="otherPropertyTypology">
                 <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherPropertyTypologyBox">
+                <input type="text" name="Other Property Typology" class="form-control" placeholder="Other Property Typology">
               </div>
             </div>
 
@@ -154,8 +160,11 @@
                 <label>Within 1 month</label>
               </div>
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other3" value="Other" id="otherAvailability">
                 <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherAvailabilityBox">
+                <input type="text" name="Other Availablity" class="form-control" placeholder="Other Availablity">
               </div>
             </div>
 
@@ -179,31 +188,31 @@
             <label class="label">No of Persons</label>
             <div class="row">
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="1" value="1">
+                <input type="checkbox" name="1person" value="One person">
                 <label>1</label>
               </div>
                 <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="2" value="2">
+                <input type="checkbox" name="2persons" value="Two persons">
                 <label>2</label>
               </div>
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="3" value="3">
+                <input type="checkbox" name="3persons" value="Three persons">
                 <label>3</label>
               </div>
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="4" value="4">
+                <input type="checkbox" name="4persons" value="Four persons">
                 <label>4</label>
               </div>
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="5" value="5">
+                <input type="checkbox" name="5persons" value="Five persons">
                 <label>5</label>
               </div>
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="More than 5" value="More than 5">
+                <input type="checkbox" name="More than 5" value="More than 5 persons">
                 <label>More than 5</label>
               </div>
               <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="More than 10" value="More than 10">
+                <input type="checkbox" name="More than 10" value="More than 10 persons">
                 <label>More than 10</label>
               </div>
             </div>
@@ -223,8 +232,11 @@
                 <label>Individual House</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other4" value="Other" id="otherTypeofProperty">
                 <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherTypeofPropertyBox">
+                <input type="text" name="Other Type of Property" class="form-control" placeholder="Other Type of Property">
               </div>
             </div>
 
@@ -252,7 +264,7 @@
                 <label>Connection Only</label>
               </div>
               <div class="col-sm-4 col-6">
-                <input type="checkbox" name="No" value="No">
+                <input type="checkbox" name="No1" value="No Power Backup">
                 <label>No</label>
               </div>
             </div>
@@ -272,8 +284,11 @@
                 <label>Outside Parking</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other5" value="Other" id="otherParking">
                 <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherParkingBox">
+                <input type="text" name="Other Parking" class="form-control" placeholder="Other Parking">
               </div>
             </div>
 
@@ -288,12 +303,15 @@
                 <label>Cat</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other6" value="Other" id="otherPets">
                 <label>Other</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="No" value="No">
+                <input type="checkbox" name="No2" value="No Pets">
                 <label>No</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherPetsBox">
+                <input type="text" name="Other Pets" class="form-control" placeholder="Other Pets">
               </div>
             </div>
 
@@ -316,8 +334,11 @@
                 <label>West</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other7" value="Other" id="otherEntranceFace">
                 <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherEntranceFaceBox">
+                <input type="text" name="Other Entrance Face" class="form-control" placeholder="Other Entrance Face">
               </div>
             </div>
             
@@ -336,28 +357,31 @@
             <label class="label">Balcony</label>
             <div class="row">
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="1" value="1">
+                <input type="checkbox" name="One" value="One Balcony">
                 <label>1</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="2" value="2">
+                <input type="checkbox" name="Two" value="Two Balcony">
                 <label>2</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="3" value="3">
+                <input type="checkbox" name="Three" value="Three Balcony">
                 <label>3</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="4" value="4">
+                <input type="checkbox" name="Four" value="Four Balcony">
                 <label>4</label>
               </div>
               <div class="col-md-3 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other8" value="Other" id="otherBalcony">
                 <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherBalconyBox">
+                <input type="text" name="Other Balcony" class="form-control" placeholder="Other Balcony">
               </div>
             </div>
 
-            <label>Amenities</label>
+            <label class="label">Amenities</label>
             <div class="row">
               <div class="col-sm-4 col-6">
                 <input type="checkbox" name="AC" value="AC">
@@ -408,8 +432,11 @@
                 <label>Kitchen Appliances</label>
               </div>
               <div class="col-sm-4 col-6">
-                <input type="checkbox" name="Other" value="Other">
+                <input type="checkbox" name="Other9" value="Other" id="otherAmenities">
                 <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherAmenitiesBox">
+                <input type="text" name="Other Amenities" class="form-control" placeholder="Other Amenities">
               </div>
             </div>
 
@@ -436,7 +463,7 @@
           </div>
         </form>
 
-        <div class="text-center"><span id="msg"></span></div>
+        <div class="text-center" style="padding-bottom: 50px;"><span id="msg"></span></div>
 
       </div>
 
@@ -453,7 +480,7 @@
   </section>
 
   <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzUo0sB3L_D_8DJXLxvz-PsRKLfElYvSsIBNi1GuYOGrqJmZrFbK6uavpd-bo6nCewU/exec"
+    const scriptURL = "https://script.google.com/macros/s/AKfycbykcbgmErYOIyyfGBDgEQOQlAF_y4UK2hAhNeANT9PUgS7C-zCJ3sMltKSS2XkzACpi/exec"
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
 
@@ -469,6 +496,110 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+    const otherAvailableFor = document.getElementById('otherAvailableFor');
+    const otherAvailableForBox = document.getElementById('otherAvailableForBox');
+
+    otherAvailableFor.addEventListener('change', function() {
+        if(this.checked) {
+          otherAvailableForBox.style.display = 'block';
+        } else {
+          otherAvailableForBox.style.display = 'none';
+        }
+    });
+
+    const otherPropertyTypology = document.getElementById('otherPropertyTypology');
+    const otherPropertyTypologyBox = document.getElementById('otherPropertyTypologyBox');
+
+    otherPropertyTypology.addEventListener('change', function() {
+        if(this.checked) {
+          otherPropertyTypologyBox.style.display = 'block';
+        } else {
+          otherPropertyTypologyBox.style.display = 'none';
+        }
+    });
+
+    const otherAvailability = document.getElementById('otherAvailability');
+    const otherAvailabilityBox = document.getElementById('otherAvailabilityBox');
+
+    otherAvailability.addEventListener('change', function() {
+        if(this.checked) {
+          otherAvailabilityBox.style.display = 'block';
+        } else {
+          otherAvailabilityBox.style.display = 'none';
+        }
+    });
+
+    const otherTypeofProperty = document.getElementById('otherTypeofProperty');
+    const otherTypeofPropertyBox = document.getElementById('otherTypeofPropertyBox');
+
+    otherTypeofProperty.addEventListener('change', function() {
+        if(this.checked) {
+          otherTypeofPropertyBox.style.display = 'block';
+        } else {
+          otherTypeofPropertyBox.style.display = 'none';
+        }
+    });
+
+    const otherParking = document.getElementById('otherParking');
+    const otherParkingBox = document.getElementById('otherParkingBox');
+
+    otherParking.addEventListener('change', function() {
+        if(this.checked) {
+          otherParkingBox.style.display = 'block';
+        } else {
+          otherParkingBox.style.display = 'none';
+        }
+    });
+
+    const otherPets = document.getElementById('otherPets');
+    const otherPetsBox = document.getElementById('otherPetsBox');
+
+    otherPets.addEventListener('change', function() {
+        if(this.checked) {
+          otherPetsBox.style.display = 'block';
+        } else {
+          otherPetsBox.style.display = 'none';
+        }
+    });
+
+
+    const otherEntranceFace = document.getElementById('otherEntranceFace');
+    const otherEntranceFaceBox = document.getElementById('otherEntranceFaceBox');
+
+    otherEntranceFace.addEventListener('change', function() {
+        if(this.checked) {
+          otherEntranceFaceBox.style.display = 'block';
+        } else {
+          otherEntranceFaceBox.style.display = 'none';
+        }
+    });
+
+    const otherBalcony = document.getElementById('otherBalcony');
+    const otherBalconyBox = document.getElementById('otherBalconyBox');
+
+    otherBalcony.addEventListener('change', function() {
+        if(this.checked) {
+          otherBalconyBox.style.display = 'block';
+        } else {
+          otherBalconyBox.style.display = 'none';
+        }
+    });
+
+    const otherAmenities = document.getElementById('otherAmenities');
+    const otherAmenitiesBox = document.getElementById('otherAmenitiesBox');
+
+    otherAmenities.addEventListener('change', function() {
+        if(this.checked) {
+          otherAmenitiesBox.style.display = 'block';
+        } else {
+          otherAmenitiesBox.style.display = 'none';
+        }
+    });
+
+
+
+
   </script>
 
 
