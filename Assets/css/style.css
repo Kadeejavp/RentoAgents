@@ -23,6 +23,11 @@ h2{
     font-family: monospace;
     color: rgb(110, 107, 107);
   }
+
+  .label{
+    text-decoration: underline;
+    font-weight: 600;
+  }
   
   optgroup{
     font-family: monospace;

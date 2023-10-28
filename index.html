@@ -40,8 +40,21 @@
               <input type="text" class="form-control" name="Location" placeholder="Location" required>
             </div>
 
+            <div class="form-group col-sm-4">
+              <input type="text" class="form-control" name="Rent Amount" placeholder="Rent Amount">
+            </div>
 
-            <label>Available For</label>
+            <div class="form-group col-sm-4">
+              <input type="text" class="form-control" name="Deposit" placeholder="Deposit">
+            </div>
+
+            <div class="form-group col-sm-4">
+              <input type="text" class="form-control" name="Maintanance" placeholder="Maintanance">
+            </div>
+
+
+
+            <label class="label">Available For</label>
             <div class="row">
               <div class="col-md-2 col-sm-4 col-6">
                 <input type="checkbox" name="Rent" value="Rent">
@@ -69,58 +82,44 @@
               </div>
             </div>
 
-            <div class="form-group col-md-4 col-sm-6">
-              <select class="form-control" name="Type of Property">
-                <optgroup>
-                  <option value="" disabled selected hidden>Type of Property</option>
-                  <option value="Gated Society">Gated Society</option>
-                  <option value="Stand Alone Building">Stand Alone Building</option>
-                  <option value="Individual House">Individual House</option>
-                  <option value="Other">Other</option>
-                </optgroup>
-              </select>
+            <label class="label">Property Typology</label>
+            <div class="row">
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="1RK" value="1RK">
+                <label>1RK</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="1BHK" value="1BHK">
+                <label>1BHK</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="2BHK" value="2BHK">
+                <label>2BHK</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="3BHK" value="3BHK">
+                <label>3BHK</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="4BHK" value="4BHK">
+                <label>4BHK</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="5BHK" value="5BHK">
+                <label>5BHK</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="Duplex" value="Duplex">
+                <label>Duplex</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="Other" value="Other">
+                <label>Other</label>
+              </div>
             </div>
 
-            <div class="form-group col-md-4 col-sm-6">
-              <select class="form-control" name="Property Typology">
-                <optgroup>
-                  <option value="" disabled selected hidden>Property Typology</option>
-                  <option value="1RK">1RK</option>
-                  <option value="1BHK">1BHK</option>
-                  <option value="2BHK">2BHK</option>
-                  <option value="3BHK">3BHK</option>
-                  <option value="4BHK">4BHK</option>
-                  <option value="5BHK">5BHK</option>
-                  <option value="Duplex">Duplex</option>
-                  <option value="Other">Other</option>
-                </optgroup>
-              </select>
-            </div>
 
-            <div class="form-group col-md-4 col-sm-6">
-              <select class="form-control" name="Furniture Type" required>
-                <optgroup>
-                  <option value="" disabled selected hidden>Furniture Type</option>
-                  <option value="Fully">Fully</option>
-                  <option value="Semi">Semi</option>
-                  <option value="Non">Non</option>
-                </optgroup>
-              </select>
-            </div>
-
-            <div class="form-group col-sm-4">
-              <input type="text" class="form-control" name="Rent Amount" placeholder="Rent Amount">
-            </div>
-
-            <div class="form-group col-sm-4">
-              <input type="text" class="form-control" name="Deposit" placeholder="Deposit">
-            </div>
-
-            <div class="form-group col-sm-4">
-              <input type="text" class="form-control" name="Maintanance" placeholder="Maintanance">
-            </div>
-
-            <label>For</label>
+            <label class="label">For</label>
             <div class="row">
               <div class="col-6">
                 <input type="checkbox" name="Family" value="Family">
@@ -130,73 +129,155 @@
                 <input type="checkbox" name="Bachelors" value="Bachelors">
                 <label>Bachelors</label>
               </div>
-
             </div>
 
-            <div class="form-group col-sm-4">
-              <select class="form-control" name="No of Persons" id="No-of-Persons">
-                <optgroup>
-                  <option value="" disabled selected hidden>No of Persons</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="More-than-5">More than 5</option>
-                  <option value="More-than-10">More than 10</option>
-                </optgroup>
-              </select>
-            </div>
-
-            <div class="form-group col-sm-4">
-              <select class="form-control" name="Water">
-                <optgroup>
-                  <option value="" disabled selected hidden>Water</option>
-                  <option value="Cauvery">Cauvery</option>
-                  <option value="Borewell">Borewell</option>
-                </optgroup>
-              </select>
-            </div>
-
-            <div class="form-group col-sm-4">
-              <select class="form-control" name="Power Backup">
-                <optgroup>
-                  <option value="" disabled selected hidden>Power Backup</option>
-                  <option value="Available">Available</option>
-                  <option value="Connection Only">Connection Only</option>
-                  <option value="No">No</option>
-                </optgroup>
-              </select>
-            </div>
-
-            <div class="form-group col-sm-6">
-              <select class="form-control" name="Parking">
-                <optgroup>
-                  <option value="" disabled selected hidden>Parking</option>
-                  <option value="Inside Car Parking">Inside Car Parking</option>
-                  <option value="Inside Bike Parking">Inside Bike Parking</option>
-                  <option value="Outside Parking">Outside Parking</option>
-                  <option value="Other">Other</option>
-                </optgroup>
-              </select>
-            </div>
-
-            <div class="form-group col-sm-6">
-              <select class="form-control" name="Availability">
-                <optgroup>
-                  <option value="" disabled selected hidden>Availability</option>
-                  <option value="Now">Now</option>
-                  <option value="1-5 Days">1-5 Days</option>
-                  <option value="5-10 Days">5-10 Days</option>
-                  <option value="10-20 Days">10-20 Days</option>
-                  <option value="Within 1 month">Within 1 month</option>
-                  <option value="Other">Other</option>
-                </optgroup>
-              </select>
+            <label class="label">Availablity</label>
+            <div class="row">
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="Now" value="Now">
+                <label>Now</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="1-5 Days" value="1-5 Days">
+                <label>1-5 Days</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="5-10 Days" value="5-10 Days">
+                <label>5-10 Days</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="10-20 Days" value="10-20 Days">
+                <label>10-20 Days</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="Within 1 month" value="Within 1 month">
+                <label>Within 1 month</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="Other" value="Other">
+                <label>Other</label>
+              </div>
             </div>
 
 
-            <label>Pet Friendly</label>
+            <label class="label">Furniture Type</label>
+            <div class="row">
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Fully" value="Fully">
+                <label>Fully</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Semi" value="Semi">
+                <label>Semi</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Non" value="Non">
+                <label>Non</label>
+              </div>
+            </div>
+
+            <label class="label">No of Persons</label>
+            <div class="row">
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="1" value="1">
+                <label>1</label>
+              </div>
+                <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="2" value="2">
+                <label>2</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="3" value="3">
+                <label>3</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="4" value="4">
+                <label>4</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="5" value="5">
+                <label>5</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="More than 5" value="More than 5">
+                <label>More than 5</label>
+              </div>
+              <div class="col-md-2 col-sm-4 col-6">
+                <input type="checkbox" name="More than 10" value="More than 10">
+                <label>More than 10</label>
+              </div>
+            </div>
+
+            <label class="label">Type of Property</label>
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Gated Society" value="Gated Society">
+                <label>Gated Society</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Stand Alone Building" value="Stand Alone Building">
+                <label>Stand Alone Building</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Individual House" value="Individual House">
+                <label>Individual House</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Other" value="Other">
+                <label>Other</label>
+              </div>
+            </div>
+
+
+            <label class="label">Water</label>
+            <div class="row">
+              <div class="col-6">
+                <input type="checkbox" name="Cauvery" value="Cauvery">
+                <label>Cauvery</label>
+              </div>
+              <div class="col-6">
+                <input type="checkbox" name="Borewell" value="Borewell">
+                <label>Borewell</label>
+              </div>
+            </div>
+
+            <label class="label">Power Backup</label>
+            <div class="row">
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Available" value="Available">
+                <label>Available</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Connection Only" value="Connection Only">
+                <label>Connection Only</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="No" value="No">
+                <label>No</label>
+              </div>
+            </div>
+
+            <label class="label">Parking</label>
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Inside Car Parking" value="Inside Car Parking">
+                <label>Inside Car Parking</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Inside Bike Parking" value="Inside Bike Parking">
+                <label>Inside Bike Parking</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Outside Parking" value="Outside Parking">
+                <label>Outside Parking</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Other" value="Other">
+                <label>Other</label>
+              </div>
+            </div>
+
+            <label class="label">Pet Friendly</label>
             <div class="row">
               <div class="col-md-3 col-6">
                 <input type="checkbox" name="Dog" value="Dog">
@@ -216,43 +297,123 @@
               </div>
             </div>
 
-            <div class="form-group col-sm-6">
-              <select class="form-control" name="Entrance Face">
-                <optgroup>
-                  <option value="" disabled selected hidden>Entrance Face</option>
-                  <option value="North">North</option>
-                  <option value="East">East</option>
-                  <option value="West">West</option>
-                  <option value="South">South</option>
-                  <option value="Other">Other</option>
-                </optgroup>
-              </select>
+            <label class="label">Entrance Face</label>
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="North" value="North">
+                <label>North</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="South" value="South">
+                <label>South</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="East" value="East">
+                <label>East</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="West" value="West">
+                <label>West</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Other" value="Other">
+                <label>Other</label>
+              </div>
+            </div>
+            
+            <label class="label">Food Type</label>
+            <div class="row">
+              <div class="col-6">
+                <input type="checkbox" name="Veg" value="Veg">
+                <label>Veg</label>
+              </div>
+              <div class="col-6">
+                <input type="checkbox" name="Non-veg" value="Non-veg">
+                <label>Non-veg</label>
+              </div>
             </div>
 
-            <div class="form-group col-sm-6">
-              <select class="form-control" name="Food Type" id="Veg-or-Non-veg">
-                <optgroup>
-                  <option value="" disabled selected hidden>Veg or Non-veg</option>
-                  <option value="Veg">Veg</option>
-                  <option value="Non-veg">Non-veg</option>
-                </optgroup>
-              </select>
+            <label class="label">Balcony</label>
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="1" value="1">
+                <label>1</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="2" value="2">
+                <label>2</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="3" value="3">
+                <label>3</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="4" value="4">
+                <label>4</label>
+              </div>
+              <div class="col-md-3 col-6">
+                <input type="checkbox" name="Other" value="Other">
+                <label>Other</label>
+              </div>
             </div>
 
-            <div class="form-group col-sm-6">
-              <select class="form-control" name="Balcony">
-                <optgroup>
-                  <option value="" disabled selected hidden>Balcony</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="Other">Other</option>
-                </optgroup>
-              </select>
+            <label>Amenities</label>
+            <div class="row">
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="AC" value="AC">
+                <label>AC</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="TV" value="TV">
+                <label>TV</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Lift" value="Lift">
+                <label>Lift</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Bed" value="Bed">
+                <label>Bed</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Geyser" value="Geyser">
+                <label>Geyser</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Sofa" value="Sofa">
+                <label>Sofa</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Refridgerator" value="Refridgerator">
+                <label>Refridgerator</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Table" value="Table">
+                <label>Table</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Wifi" value="Wifi">
+                <label>Wifi</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Water Purifier" value="Water Purifier">
+                <label>Water Purifier</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Washing Machine" value="Washing Machine">
+                <label>Washing Machine</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Kitchen Appliances" value="Kitchen Appliances">
+                <label>Kitchen Appliances</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Other" value="Other">
+                <label>Other</label>
+              </div>
             </div>
 
-            <div class="form-group col-sm-6">
+            <div class="form-group col-12">
               <select class="form-control" name="Security/Care Taker">
                 <optgroup>
                   <option value="" disabled selected hidden>Security/Care Taker</option>
@@ -261,64 +422,6 @@
                 </optgroup>
               </select>
             </div>
-
-            <label>Amenities</label>
-            <div class="row">
-              <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="AC" value="AC">
-                <label>AC</label>
-              </div>
-              <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="TV" value="TV">
-                <label>TV</label>
-              </div>
-              <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="Lift" value="Lift">
-                <label>Lift</label>
-              </div>
-              <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="Bed" value="Bed">
-                <label>Bed</label>
-              </div>
-              <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="Geyser" value="Geyser">
-                <label>Geyser</label>
-              </div>
-              <div class="col-md-2 col-sm-4 col-6">
-                <input type="checkbox" name="Sofa" value="Sofa">
-                <label>Sofa</label>
-              </div>
-              <div class="col-md-3 col-sm-4 col-6">
-                <input type="checkbox" name="Refridgerator" value="Refridgerator">
-                <label>Refridgerator</label>
-              </div>
-              <div class="col-md-3 col-sm-4 col-6">
-                <input type="checkbox" name="Table" value="Table">
-                <label>Table</label>
-              </div>
-              <div class="col-md-3 col-sm-4 col-6">
-                <input type="checkbox" name="Wifi" value="Wifi">
-                <label>Wifi</label>
-              </div>
-              <div class="col-md-3 col-6">
-                <input type="checkbox" name="Water Purifier" value="Water Purifier">
-                <label>Water Purifier</label>
-              </div>
-              <div class="col-md-4 col-6">
-                <input type="checkbox" name="Washing Machine" value="Washing Machine">
-                <label>Washing Machine</label>
-              </div>
-              <div class="col-md-4 col-6">
-                <input type="checkbox" name="Kitchen Appliances" value="Kitchen Appliances">
-                <label>Kitchen Appliances</label>
-              </div>
-              <div class="col-md-4 col-6">
-                <input type="checkbox" name="Other" value="Other">
-                <label>Other</label>
-              </div>
-            </div>
-
-
 
             <div class="form-group">
               <textarea class="form-control" name="Other Preferences" rows="5" id="Otherpreferences"
