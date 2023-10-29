@@ -11,9 +11,38 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script>
+    function generateSerialNumber() {
+      var now = new Date();
+      var timestamp = now.getTime().toString();
+
+      var randomString = generateRandomString(3); // You can adjust the length of the random string as needed
+      var shortenedTimestamp = timestamp.slice(-3); // Extracting the last 6 digits of the timestamp
+
+      var serialNumber = randomString + shortenedTimestamp;
+      return serialNumber;
+    }
+
+    function generateRandomString(length) {
+      var result = '';
+      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var charactersLength = characters.length;
+      for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    }
+
+    function displaySerialNumber() {
+      var serialNumber = generateSerialNumber();
+      document.getElementById("serialNumber").innerHTML = "Serial Number: " + serialNumber;
+    }
+  </script>
+
 </head>
 
-<body>
+<body onload="displaySerialNumber()">
 
   <section id="contact">
     <div class="container col-lg-9">
@@ -22,6 +51,8 @@
         <h2>Data Collection</h2>
         <h4>For Owners</h4>
       </div>
+
+      <div id="serialNumber"></div>
 
       <div>
         <form name="submit-to-google-sheet">
@@ -120,7 +151,8 @@
                 <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherPropertyTypologyBox">
-                <input type="text" name="Other Property Typology" class="form-control" placeholder="Other Property Typology">
+                <input type="text" name="Other Property Typology" class="form-control"
+                  placeholder="Other Property Typology">
               </div>
             </div>
 
@@ -191,7 +223,7 @@
                 <input type="checkbox" name="1person" value="One person">
                 <label>1</label>
               </div>
-                <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4 col-6">
                 <input type="checkbox" name="2persons" value="Two persons">
                 <label>2</label>
               </div>
@@ -236,7 +268,8 @@
                 <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherTypeofPropertyBox">
-                <input type="text" name="Other Type of Property" class="form-control" placeholder="Other Type of Property">
+                <input type="text" name="Other Type of Property" class="form-control"
+                  placeholder="Other Type of Property">
               </div>
             </div>
 
@@ -341,7 +374,7 @@
                 <input type="text" name="Other Entrance Face" class="form-control" placeholder="Other Entrance Face">
               </div>
             </div>
-            
+
             <label class="label">Food Type</label>
             <div class="row">
               <div class="col-6">
@@ -476,7 +509,7 @@
     <div class="text-center">
       <h6>Copyrights@RentoBangalore</h6>
     </div>
-    
+
   </section>
 
   <script>
@@ -500,101 +533,101 @@
     const otherAvailableFor = document.getElementById('otherAvailableFor');
     const otherAvailableForBox = document.getElementById('otherAvailableForBox');
 
-    otherAvailableFor.addEventListener('change', function() {
-        if(this.checked) {
-          otherAvailableForBox.style.display = 'block';
-        } else {
-          otherAvailableForBox.style.display = 'none';
-        }
+    otherAvailableFor.addEventListener('change', function () {
+      if (this.checked) {
+        otherAvailableForBox.style.display = 'block';
+      } else {
+        otherAvailableForBox.style.display = 'none';
+      }
     });
 
     const otherPropertyTypology = document.getElementById('otherPropertyTypology');
     const otherPropertyTypologyBox = document.getElementById('otherPropertyTypologyBox');
 
-    otherPropertyTypology.addEventListener('change', function() {
-        if(this.checked) {
-          otherPropertyTypologyBox.style.display = 'block';
-        } else {
-          otherPropertyTypologyBox.style.display = 'none';
-        }
+    otherPropertyTypology.addEventListener('change', function () {
+      if (this.checked) {
+        otherPropertyTypologyBox.style.display = 'block';
+      } else {
+        otherPropertyTypologyBox.style.display = 'none';
+      }
     });
 
     const otherAvailability = document.getElementById('otherAvailability');
     const otherAvailabilityBox = document.getElementById('otherAvailabilityBox');
 
-    otherAvailability.addEventListener('change', function() {
-        if(this.checked) {
-          otherAvailabilityBox.style.display = 'block';
-        } else {
-          otherAvailabilityBox.style.display = 'none';
-        }
+    otherAvailability.addEventListener('change', function () {
+      if (this.checked) {
+        otherAvailabilityBox.style.display = 'block';
+      } else {
+        otherAvailabilityBox.style.display = 'none';
+      }
     });
 
     const otherTypeofProperty = document.getElementById('otherTypeofProperty');
     const otherTypeofPropertyBox = document.getElementById('otherTypeofPropertyBox');
 
-    otherTypeofProperty.addEventListener('change', function() {
-        if(this.checked) {
-          otherTypeofPropertyBox.style.display = 'block';
-        } else {
-          otherTypeofPropertyBox.style.display = 'none';
-        }
+    otherTypeofProperty.addEventListener('change', function () {
+      if (this.checked) {
+        otherTypeofPropertyBox.style.display = 'block';
+      } else {
+        otherTypeofPropertyBox.style.display = 'none';
+      }
     });
 
     const otherParking = document.getElementById('otherParking');
     const otherParkingBox = document.getElementById('otherParkingBox');
 
-    otherParking.addEventListener('change', function() {
-        if(this.checked) {
-          otherParkingBox.style.display = 'block';
-        } else {
-          otherParkingBox.style.display = 'none';
-        }
+    otherParking.addEventListener('change', function () {
+      if (this.checked) {
+        otherParkingBox.style.display = 'block';
+      } else {
+        otherParkingBox.style.display = 'none';
+      }
     });
 
     const otherPets = document.getElementById('otherPets');
     const otherPetsBox = document.getElementById('otherPetsBox');
 
-    otherPets.addEventListener('change', function() {
-        if(this.checked) {
-          otherPetsBox.style.display = 'block';
-        } else {
-          otherPetsBox.style.display = 'none';
-        }
+    otherPets.addEventListener('change', function () {
+      if (this.checked) {
+        otherPetsBox.style.display = 'block';
+      } else {
+        otherPetsBox.style.display = 'none';
+      }
     });
 
 
     const otherEntranceFace = document.getElementById('otherEntranceFace');
     const otherEntranceFaceBox = document.getElementById('otherEntranceFaceBox');
 
-    otherEntranceFace.addEventListener('change', function() {
-        if(this.checked) {
-          otherEntranceFaceBox.style.display = 'block';
-        } else {
-          otherEntranceFaceBox.style.display = 'none';
-        }
+    otherEntranceFace.addEventListener('change', function () {
+      if (this.checked) {
+        otherEntranceFaceBox.style.display = 'block';
+      } else {
+        otherEntranceFaceBox.style.display = 'none';
+      }
     });
 
     const otherBalcony = document.getElementById('otherBalcony');
     const otherBalconyBox = document.getElementById('otherBalconyBox');
 
-    otherBalcony.addEventListener('change', function() {
-        if(this.checked) {
-          otherBalconyBox.style.display = 'block';
-        } else {
-          otherBalconyBox.style.display = 'none';
-        }
+    otherBalcony.addEventListener('change', function () {
+      if (this.checked) {
+        otherBalconyBox.style.display = 'block';
+      } else {
+        otherBalconyBox.style.display = 'none';
+      }
     });
 
     const otherAmenities = document.getElementById('otherAmenities');
     const otherAmenitiesBox = document.getElementById('otherAmenitiesBox');
 
-    otherAmenities.addEventListener('change', function() {
-        if(this.checked) {
-          otherAmenitiesBox.style.display = 'block';
-        } else {
-          otherAmenitiesBox.style.display = 'none';
-        }
+    otherAmenities.addEventListener('change', function () {
+      if (this.checked) {
+        otherAmenitiesBox.style.display = 'block';
+      } else {
+        otherAmenitiesBox.style.display = 'none';
+      }
     });
 
 
