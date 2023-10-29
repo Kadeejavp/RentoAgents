@@ -4,8 +4,9 @@ body{
 
 .section-title{
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 h2{
@@ -13,15 +14,21 @@ h2{
 }
 
 #contact{
-    background-color: #9c8464;
-    background-image: linear-gradient(180deg, #9c8464 0%, #a18969 74%);
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   }
   
   #contact select{
     -webkit-appearance: menulist;
     appearance: menulist;
     font-family: monospace;
-    color: rgb(110, 107, 107);
+    color: black;
+  }
+
+  .serial-no{
+    font-family: monospace;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 18px;
   }
 
   .label{
@@ -47,21 +54,21 @@ h2{
     outline-style: none;
     box-shadow: none;
     border: 2px solid;
-    border-color: black;
+    border-color: rgb(76, 167, 202);
   }
   
   #contact select:focus{
     outline-style: none;
     box-shadow: none;
     border: 2px solid;
-    border-color: black;
+    border-color: rgb(76, 167, 202);
   }
   
   #contact textarea:focus{
     outline-style: none;
     box-shadow: none;
     border: 2px solid;
-    border-color: black;
+    border-color: rgb(76, 167, 202);
   }
   
   #contact span{
@@ -75,22 +82,23 @@ h2{
   
   #contact textarea{
     font-family: monospace;
-    color: rgb(110, 107, 107);
+    color: black;
   }
   
   #contact input{
-    color: rgb(110, 107, 107);
+    color: black;
   }
 
   label{
     font-family: monospace;
     margin-bottom: 2vh;
+    color: white;
   }
   
   input[type="submit"] {
     width: 100px;
-    background-color: black;
-    color: white !important;
+    background-color: white;
+    color: black !important;
     padding: 5px;
     font-family: monospace;
     border-radius: 3px;
@@ -100,5 +108,6 @@ h2{
   }
 
   input[type="submit"]:hover{
-    background-color: #7c6440;
+    background-color: black;
+    color: white !important;
   }

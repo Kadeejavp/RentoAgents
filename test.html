@@ -52,7 +52,7 @@
         <h4>For Owners</h4>
       </div>
 
-      <div class=" serial-no text-center" id="serialNumber"></div>
+      <div id="serialNumber"></div>
 
       <div>
         <form name="submit-to-google-sheet">
@@ -251,19 +251,19 @@
 
             <label class="label">Type of Property</label>
             <div class="row">
-              <div class="col-md-3 col-12">
+              <div class="col-md-3 col-6">
                 <input type="checkbox" name="Gated Society" value="Gated Society">
                 <label>Gated Society</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3 col-6">
                 <input type="checkbox" name="Stand Alone Building" value="Stand Alone Building">
                 <label>Stand Alone Building</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3 col-6">
                 <input type="checkbox" name="Individual House" value="Individual House">
                 <label>Individual House</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3 col-6">
                 <input type="checkbox" name="Other4" value="Other" id="otherTypeofProperty">
                 <label>Other</label>
               </div>
@@ -304,19 +304,19 @@
 
             <label class="label">Parking</label>
             <div class="row">
-              <div class="col-md-3 col-12">
+              <div class="col-md-3 col-6">
                 <input type="checkbox" name="Inside Car Parking" value="Inside Car Parking">
                 <label>Inside Car Parking</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3 col-6">
                 <input type="checkbox" name="Inside Bike Parking" value="Inside Bike Parking">
                 <label>Inside Bike Parking</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3 col-6">
                 <input type="checkbox" name="Outside Parking" value="Outside Parking">
                 <label>Outside Parking</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3 col-6">
                 <input type="checkbox" name="Other5" value="Other" id="otherParking">
                 <label>Other</label>
               </div>
@@ -461,12 +461,12 @@
                 <label>Washing Machine</label>
               </div>
               <div class="col-sm-4 col-6">
-                <input type="checkbox" name="Other9" value="Other" id="otherAmenities">
-                <label>Other</label>
-              </div>
-              <div class="col-sm-4 col-12">
                 <input type="checkbox" name="Kitchen Appliances" value="Kitchen Appliances">
                 <label>Kitchen Appliances</label>
+              </div>
+              <div class="col-sm-4 col-6">
+                <input type="checkbox" name="Other9" value="Other" id="otherAmenities">
+                <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherAmenitiesBox">
                 <input type="text" name="Other Amenities" class="form-control" placeholder="Other Amenities">
@@ -513,7 +513,7 @@
   </section>
 
   <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxHYenpbIP6CI7W3MyIF2KPxNAI5gA5jAcNvNgRXxzl1TzMholModgBHQMAnLiRIQuZ/exec"
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwR0pObCHYy168tzQhCzJhPxtIrhG_vswXmOCdpTyrRNidNoy0eR2m5cPI36jP5PPtk/exec"
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
 
