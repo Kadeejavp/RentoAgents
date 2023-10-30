@@ -1,113 +1,149 @@
-body{
-    font-family: monospace;
+body {
+  font-family: monospace;
 }
 
-.section-title{
-    padding-top: 60px;
-    padding-bottom: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+.section-title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: monospace;
+  color: white;
+  text-shadow: 1px 1px 1px white;
+
 }
 
-h2{
-    text-decoration: underline;
+p {
+  text-decoration: underline;
+  font-size: 18px;
+  letter-spacing: 4px;
 }
 
-#contact{
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-  }
-  
-  #contact select{
-    -webkit-appearance: menulist;
-    appearance: menulist;
-    font-family: monospace;
-    color: black;
-  }
+#contact {
+  background: black;
+}
 
-  .serial-no{
-    font-family: monospace;
-    padding-bottom: 30px;
-    color: white;
-    font-size: 18px;
-  }
+#contact select {
+  -webkit-appearance: menulist;
+  appearance: menulist;
+  font-family: monospace;
+  background-color: rgb(36, 31, 31);
+  color: white;
+  border: none;
+}
 
-  .label{
-    text-decoration: underline;
-    font-weight: 900;
-    padding-top: 3vh;
-    font-size: 17px;
-  }
-  
-  optgroup{
-    font-family: monospace;
-  }
-  
-  #contact ::placeholder{
-    font-family: monospace;
-  }
-  
-  #contact input{
-    font-family: monospace;
-  }
-  
-  #contact input:focus{
-    outline-style: none;
-    box-shadow: none;
-    border: 2px solid;
-    border-color: rgb(76, 167, 202);
-  }
-  
-  #contact select:focus{
-    outline-style: none;
-    box-shadow: none;
-    border: 2px solid;
-    border-color: rgb(76, 167, 202);
-  }
-  
-  #contact textarea:focus{
-    outline-style: none;
-    box-shadow: none;
-    border: 2px solid;
-    border-color: rgb(76, 167, 202);
-  }
-  
-  #contact span{
-    font-family: monospace;
-    font-size: 22px;
-  }
-  
-  .form-group{
-    margin-bottom: 3vh;
-  }
-  
-  #contact textarea{
-    font-family: monospace;
-    color: black;
-  }
-  
-  #contact input{
-    color: black;
-  }
+.serial-no {
+  font-family: monospace;
+  padding-bottom: 30px;
+  color: white;
+  letter-spacing: 3px;
+}
 
-  label{
-    font-family: monospace;
-    margin-bottom: 2vh;
-    color: white;
-  }
-  
-  input[type="submit"] {
-    width: 100px;
-    background-color: white;
-    color: black !important;
-    padding: 5px;
-    font-family: monospace;
-    border-radius: 3px;
-    border: none;
-    margin-top: 25px;
-    margin-bottom: 50px;
-  }
+.logo{
+  padding-top: 50px;
 
-  input[type="submit"]:hover{
-    background-color: black;
-    color: white !important;
-  }
+}
+
+#contact img{
+  width: 226px;
+  height: 118px;
+}
+
+.label {
+  text-decoration: underline;
+  font-weight: 900;
+  padding-top: 3vh;
+  font-size: 17px;
+}
+
+.my-form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white ;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgb(36, 31, 31);
+  background-clip: padding-box;
+  border: black;
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+::placeholder {
+  color: white;
+}
+
+optgroup {
+  font-family: monospace;
+}
+
+#contact ::placeholder {
+  font-family: monospace;
+}
+
+#contact input {
+  font-family: monospace;
+}
+
+#contact input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border: 2px solid;
+  border-color: white;
+}
+
+#contact select:focus {
+  outline-style: none;
+  box-shadow: none;
+  border: 2px solid;
+  border-color: white;
+}
+
+#contact textarea:focus {
+  outline-style: none;
+  box-shadow: none;
+  border: 2px solid;
+  border-color: white;
+}
+
+#contact span {
+  font-family: monospace;
+  font-size: 22px;
+}
+
+.form-group {
+  margin-bottom: 3vh;
+}
+
+#contact textarea {
+  font-family: monospace;
+  color: white;
+  background-color: rgb(36, 31, 31);
+  border: none;
+}
+
+label {
+  font-family: monospace;
+  margin-bottom: 2vh;
+  color: white;
+}
+
+input[type="submit"] {
+  width: 100px;
+  background: linear-gradient(109.6deg,black, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  color: white !important;
+  padding: 5px;
+  font-family: monospace;
+  border-radius: 3px;
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(109.6deg,rgb(63, 61, 61) 11.2%, rgba(0, 0, 0, 0.93) 78.9%, black);
+  color: white !important;
+}

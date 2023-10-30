@@ -47,9 +47,12 @@
   <section id="contact">
     <div class="container col-lg-9">
 
+      <div class="logo text-center">
+        <img src="Assets/img/Rentologo1.jpg">
+      </div>
+
       <div class="section-title text-center">
-        <h2>Data Collection</h2>
-        <h4>For Owners</h4>
+        <p>Data Collection For Owners</p>
       </div>
 
       <div class=" serial-no text-center" id="serialNumber"></div>
@@ -58,56 +61,56 @@
         <form name="submit-to-google-sheet">
           <div class="row">
             <div class="form-group col-sm-6">
-              <input type="text" name="Agent Name" class="form-control" placeholder="Agent Name" required>
+              <input type="text" name="Agent Name" class="my-form-control" placeholder="Agent Name" required>
             </div>
             <div class="form-group col-sm-6">
-              <input type="text" class="form-control" name="Owner Name" placeholder="Owner Name" required>
+              <input type="text" class="my-form-control" name="Owner Name" placeholder="Owner Name" required>
             </div>
 
             <div class="form-group col-sm-6">
-              <input type="text" name="Contact Number" class="form-control" placeholder="Contact Number" required>
+              <input type="text" name="Contact Number" class="my-form-control" placeholder="Contact Number" required>
             </div>
             <div class="form-group col-sm-6">
-              <input type="text" class="form-control" name="Location" placeholder="Location" required>
+              <input type="text" class="my-form-control" name="Location" placeholder="Location" required>
             </div>
 
             <div class="form-group col-sm-4">
-              <input type="text" class="form-control" name="Rent Amount" placeholder="Rent Amount">
+              <input type="text" class="my-form-control" name="Rent Amount" placeholder="Rent Amount">
             </div>
 
             <div class="form-group col-sm-4">
-              <input type="text" class="form-control" name="Deposit" placeholder="Deposit">
+              <input type="text" class="my-form-control" name="Deposit" placeholder="Deposit">
             </div>
 
             <div class="form-group col-sm-4">
-              <input type="text" class="form-control" name="Maintanance" placeholder="Maintanance">
+              <input type="text" class="my-form-control" name="Maintanance" placeholder="Maintanance">
             </div>
 
 
 
             <label class="label">Available For</label>
             <div class="row">
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Rent" value="Rent">
                 <label>Rent</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Lease" value="Lease">
                 <label>Lease</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Buy" value="Buy">
                 <label>Buy</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Sell" value="Sell">
                 <label>Sell</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Commercials" value="Commercials">
                 <label>Commercials</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Other1" value="Other" id="otherAvailableFor">
                 <label>Other</label>
               </div>
@@ -118,35 +121,35 @@
 
             <label class="label">Property Typology</label>
             <div class="row">
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="1RK" value="1RK">
                 <label>1RK</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="1BHK" value="1BHK">
                 <label>1BHK</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="2BHK" value="2BHK">
                 <label>2BHK</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="3BHK" value="3BHK">
                 <label>3BHK</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="4BHK" value="4BHK">
                 <label>4BHK</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="5BHK" value="5BHK">
                 <label>5BHK</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Duplex" value="Duplex">
                 <label>Duplex</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Other2" value="Other" id="otherPropertyTypology">
                 <label>Other</label>
               </div>
@@ -159,11 +162,11 @@
 
             <label class="label">For</label>
             <div class="row">
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="Family" value="Family">
                 <label>Family</label>
               </div>
-              <div class="col-6">
+              <div class="col-sm--6">
                 <input type="checkbox" name="Bachelors" value="Bachelors">
                 <label>Bachelors</label>
               </div>
@@ -171,27 +174,27 @@
 
             <label class="label">Availablity</label>
             <div class="row">
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Now" value="Now">
                 <label>Now</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="1-5 Days" value="1-5 Days">
                 <label>1-5 Days</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="5-10 Days" value="5-10 Days">
                 <label>5-10 Days</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="10-20 Days" value="10-20 Days">
                 <label>10-20 Days</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Within 1 month" value="Within 1 month">
                 <label>Within 1 month</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="Other3" value="Other" id="otherAvailability">
                 <label>Other</label>
               </div>
@@ -203,15 +206,15 @@
 
             <label class="label">Furniture Type</label>
             <div class="row">
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Fully" value="Fully">
                 <label>Fully</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Semi" value="Semi">
                 <label>Semi</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Non" value="Non">
                 <label>Non</label>
               </div>
@@ -219,31 +222,31 @@
 
             <label class="label">No of Persons</label>
             <div class="row">
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="1person" value="One person">
                 <label>1</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="2persons" value="Two persons">
                 <label>2</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="3persons" value="Three persons">
                 <label>3</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="4persons" value="Four persons">
                 <label>4</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="5persons" value="Five persons">
                 <label>5</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="More than 5" value="More than 5 persons">
                 <label>More than 5</label>
               </div>
-              <div class="col-md-2 col-sm-4 col-6">
+              <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="More than 10" value="More than 10 persons">
                 <label>More than 10</label>
               </div>
@@ -276,11 +279,11 @@
 
             <label class="label">Water</label>
             <div class="row">
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="Cauvery" value="Cauvery">
                 <label>Cauvery</label>
               </div>
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="Borewell" value="Borewell">
                 <label>Borewell</label>
               </div>
@@ -288,15 +291,15 @@
 
             <label class="label">Power Backup</label>
             <div class="row">
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Available" value="Available">
                 <label>Available</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Connection Only" value="Connection Only">
                 <label>Connection Only</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="No1" value="No Power Backup">
                 <label>No</label>
               </div>
@@ -304,19 +307,19 @@
 
             <label class="label">Parking</label>
             <div class="row">
-              <div class="col-md-3 col-12">
+              <div class="col-md-3">
                 <input type="checkbox" name="Inside Car Parking" value="Inside Car Parking">
                 <label>Inside Car Parking</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3">
                 <input type="checkbox" name="Inside Bike Parking" value="Inside Bike Parking">
                 <label>Inside Bike Parking</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3">
                 <input type="checkbox" name="Outside Parking" value="Outside Parking">
                 <label>Outside Parking</label>
               </div>
-              <div class="col-md-3 col-12">
+              <div class="col-md-3">
                 <input type="checkbox" name="Other5" value="Other" id="otherParking">
                 <label>Other</label>
               </div>
@@ -327,46 +330,46 @@
 
             <label class="label">Pet Friendly</label>
             <div class="row">
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="Dog" value="Dog">
                 <label>Dog</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="Cat" value="Cat">
                 <label>Cat</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="Other6" value="Other" id="otherPets">
                 <label>Other</label>
               </div>
-              <div class="col-md-3 col-6">
-                <input type="checkbox" name="No2" value="No Pets">
-                <label>No</label>
-              </div>
               <div class="form-group col-12" style="display: none;" id="otherPetsBox">
                 <input type="text" name="Other Pets" class="form-control" placeholder="Other Pets">
+              </div>
+              <div class="col-md-3">
+                <input type="checkbox" name="No2" value="No Pets">
+                <label>No</label>
               </div>
             </div>
 
             <label class="label">Entrance Face</label>
             <div class="row">
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="North" value="North">
                 <label>North</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="South" value="South">
                 <label>South</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="East" value="East">
                 <label>East</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="West" value="West">
                 <label>West</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="Other7" value="Other" id="otherEntranceFace">
                 <label>Other</label>
               </div>
@@ -377,11 +380,11 @@
 
             <label class="label">Food Type</label>
             <div class="row">
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="Veg" value="Veg">
                 <label>Veg</label>
               </div>
-              <div class="col-6">
+              <div class="col-sm-6">
                 <input type="checkbox" name="Non-veg" value="Non-veg">
                 <label>Non-veg</label>
               </div>
@@ -389,23 +392,23 @@
 
             <label class="label">Balcony</label>
             <div class="row">
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="One" value="One Balcony">
                 <label>1</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="Two" value="Two Balcony">
                 <label>2</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="Three" value="Three Balcony">
                 <label>3</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="Four" value="Four Balcony">
                 <label>4</label>
               </div>
-              <div class="col-md-3 col-6">
+              <div class="col-md-3">
                 <input type="checkbox" name="Other8" value="Other" id="otherBalcony">
                 <label>Other</label>
               </div>
@@ -416,51 +419,51 @@
 
             <label class="label">Amenities</label>
             <div class="row">
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="AC" value="AC">
                 <label>AC</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="TV" value="TV">
                 <label>TV</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Lift" value="Lift">
                 <label>Lift</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Bed" value="Bed">
                 <label>Bed</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Geyser" value="Geyser">
                 <label>Geyser</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Sofa" value="Sofa">
                 <label>Sofa</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Refridgerator" value="Refridgerator">
                 <label>Refridgerator</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Table" value="Table">
                 <label>Table</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Wifi" value="Wifi">
                 <label>Wifi</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Water Purifier" value="Water Purifier">
                 <label>Water Purifier</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Washing Machine" value="Washing Machine">
                 <label>Washing Machine</label>
               </div>
-              <div class="col-sm-4 col-6">
+              <div class="col-sm-4">
                 <input type="checkbox" name="Other9" value="Other" id="otherAmenities">
                 <label>Other</label>
               </div>
@@ -474,7 +477,7 @@
             </div>
 
             <div class="form-group col-12">
-              <select class="form-control" name="Security/Care Taker">
+              <select class="my-form-control" name="Security/Care Taker">
                 <optgroup>
                   <option value="" disabled selected hidden>Security/Care Taker</option>
                   <option value="Yes">Yes</option>
@@ -484,7 +487,7 @@
             </div>
 
             <div class="form-group">
-              <textarea class="form-control" name="Other Preferences" rows="5" id="Otherpreferences"
+              <textarea class="my-form-control" name="Other Preferences" rows="5" id="Otherpreferences"
                 placeholder="Other Preferences"></textarea>
             </div>
           </div>
@@ -496,7 +499,7 @@
           </div>
         </form>
 
-        <div class="text-center" style="padding-bottom: 50px;"><span id="msg"></span></div>
+        <div class="text-center" style="padding-bottom: 50px; color: white;"><span id="msg"></span></div>
 
       </div>
 
