@@ -16,6 +16,7 @@ body {
 }
 
 p {
+  text-decoration: underline;
   font-size: 18px;
   letter-spacing: 4px;
 }
