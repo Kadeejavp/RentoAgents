@@ -6,19 +6,40 @@ body {
   --color-secondary: #161718;
 }
 
-.section-title {
+.section-title-1 {
   padding-top: 40px;
-  padding-bottom: 20px;
   font-family: monospace;
   color: white;
-  text-shadow: 1px 1px 1px white;
-
+  letter-spacing: 4px;
+  float: left;
+  display: flex;
+  justify-content: flex-end;
 }
 
-p {
-  text-decoration: underline;
-  font-size: 18px;
+.vl{
+  margin-top: 200px;
+  height: 60px;
+  border-left: 2px solid white;
+  position: absolute;
+  left: 50%;
+}
+
+.hl{
+  padding-top: 60px;
+  border-bottom: 2px solid white;
+  opacity: 1;
+  z-index: 2;
+  width: 20%;
+  margin-left: 33%;
+}
+
+.section-title-2 {
+  font-family: monospace;
+  color: white;
   letter-spacing: 4px;
+  padding-bottom: 40px;
+  float: left;
+  padding-left: 5px;
 }
 
 #contact {
@@ -38,7 +59,7 @@ p {
   font-family: monospace;
   padding-bottom: 30px;
   color: white;
-  letter-spacing: 3px;
+  margin-left: 5px;
 }
 
 .logo{
@@ -154,4 +175,124 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: linear-gradient(109.6deg,rgb(63, 61, 61) 11.2%, rgba(0, 0, 0, 0.93) 78.9%, black);
   color: white !important;
+}
+
+@media(max-width: 1200px){
+  .hl{
+    width: 27%;
+    margin-left: 28%;
+  }
+}
+
+@media(max-width: 768px){
+  .hl{
+    width: 39%;
+  }
+  .vl{
+    left: 56%;
+  }
+}
+
+@media(max-width: 650px){
+  .vl{
+    left: 57%;
+  }
+}
+
+@media(max-width: 580px){
+  .vl{
+    left: 58%;
+  }
+
+  .hl{
+    width: 39%;
+  }
+}
+
+@media(max-width: 495px){
+  .hl{
+    margin-left: 24%;
+    width: 42%;
+  }
+}
+
+@media (max-width: 462px){
+  .hl {
+    margin-left: 21%;
+    width: 46%;
+}
+}
+
+@media (max-width: 435px){
+  .hl {
+    margin-left: 18%;
+    width: 50%;
+}
+}
+
+
+@media (max-width: 415px){
+.hl {
+    margin-left: 15%;
+    width: 54%;
+}
+}
+
+@media (max-width: 395px){
+.hl {
+    margin-left: 13%;
+    width: 57%;
+}
+}
+
+@media (max-width:365px){
+  .vl{
+    left: 58%;
+  }
+
+  .hl{
+    width: 68%;
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 356px){
+  .section-title-1{
+    letter-spacing: 3px;
+  }
+
+  .section-title-2{
+    letter-spacing: 3px;
+  }
+
+  .hl {
+    width: 60%;
+    margin-left: 10%;
+}
+}
+
+@media (max-width: 330px){
+  .section-title-1{
+    letter-spacing: 2px;
+  }
+
+  .section-title-2{
+    letter-spacing: 2px;
+  }
+
+  .hl {
+    width: 60%;
+    margin-left: 10%;
+}
+}
+
+@media (max-width: 305px){
+  .section-title-1{
+    letter-spacing: 1px;
+  }
+
+  .section-title-2{
+    letter-spacing: 1px;
+  }
+
 }
