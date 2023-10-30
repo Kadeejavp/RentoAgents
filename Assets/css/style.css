@@ -135,6 +135,10 @@ label {
   color: white;
 }
 
+input[type="checkbox"]{
+  margin-left: 10px;
+}
+
 input[type="submit"] {
   width: 100px;
   background: linear-gradient(109.6deg,black, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
