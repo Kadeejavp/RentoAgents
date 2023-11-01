@@ -82,16 +82,20 @@
               <input type="text" class="my-form-control" name="Location" placeholder="Location" required>
             </div>
 
-            <div class="form-group col-sm-4">
+            <div class="form-group col-sm-6">
               <input type="text" class="my-form-control" name="Rent Amount" placeholder="Rent Amount">
             </div>
 
-            <div class="form-group col-sm-4">
+            <div class="form-group col-sm-6">
               <input type="text" class="my-form-control" name="Deposit" placeholder="Deposit">
             </div>
 
-            <div class="form-group col-sm-4">
+            <div class="form-group col-sm-6">
               <input type="text" class="my-form-control" name="Maintanance" placeholder="Maintanance">
+            </div>
+
+            <div class="form-group col-sm-6">
+              <input type="text" class="my-form-control" name="Square Feet" placeholder="Square Feet">
             </div>
 
 
@@ -130,8 +134,8 @@
             <label class="label">Property Typology</label>
             <div class="row">
               <div class="col-md-2 col-sm-4">
-                <input type="checkbox" name="1RK" value="1RK">
-                <label>1RK</label>
+                <input type="checkbox" name="Studio Room" value="Studio Room">
+                <label>Studio Room</label>
               </div>
               <div class="col-md-2 col-sm-4">
                 <input type="checkbox" name="1BHK" value="1BHK">
@@ -166,6 +170,39 @@
                   placeholder="Other Property Typology">
               </div>
             </div>
+
+            <label class="label">Floor</label>
+            <div class="row">
+              <div class="col-md-2 col-sm-4">
+                <input type="checkbox" name="Ground Floor" value="Ground Floor">
+                <label>Ground Floor</label>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <input type="checkbox" name="First Floor" value="First Floor">
+                <label>First Floor</label>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <input type="checkbox" name="Second Floor" value="Second Floor">
+                <label>Second Floor</label>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <input type="checkbox" name="Third Floor" value="Third Floor">
+                <label>Third Floor</label>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <input type="checkbox" name="Fourth Floor" value="Third Floor">
+                <label>Third Floor</label>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                <input type="checkbox" name="Other3" value="Other" id="otherFloor">
+                <label>Other</label>
+              </div>
+              <div class="form-group col-12" style="display: none;" id="otherFloorBox">
+                <input type="text" name="Other Floor" class="form-control"
+                  placeholder="Other Floor">
+              </div>
+            </div>
+
 
 
             <label class="label">For</label>
@@ -203,7 +240,7 @@
                 <label>Within 1 month</label>
               </div>
               <div class="col-md-3 col-sm-4">
-                <input type="checkbox" name="Other3" value="Other" id="otherAvailability">
+                <input type="checkbox" name="Other4" value="Other" id="otherAvailability">
                 <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherAvailabilityBox">
@@ -275,7 +312,7 @@
                 <label>Individual House</label>
               </div>
               <div class="col-md-3 col-12">
-                <input type="checkbox" name="Other4" value="Other" id="otherTypeofProperty">
+                <input type="checkbox" name="Other5" value="Other" id="otherTypeofProperty">
                 <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherTypeofPropertyBox">
@@ -328,7 +365,7 @@
                 <label>Outside Parking</label>
               </div>
               <div class="col-md-3">
-                <input type="checkbox" name="Other5" value="Other" id="otherParking">
+                <input type="checkbox" name="Other6" value="Other" id="otherParking">
                 <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherParkingBox">
@@ -347,7 +384,7 @@
                 <label>Cat</label>
               </div>
               <div class="col-md-3">
-                <input type="checkbox" name="Other6" value="Other" id="otherPets">
+                <input type="checkbox" name="Other7" value="Other" id="otherPets">
                 <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherPetsBox">
@@ -378,7 +415,7 @@
                 <label>West</label>
               </div>
               <div class="col-md-3">
-                <input type="checkbox" name="Other7" value="Other" id="otherEntranceFace">
+                <input type="checkbox" name="Other8" value="Other" id="otherEntranceFace">
                 <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherEntranceFaceBox">
@@ -417,7 +454,7 @@
                 <label>4</label>
               </div>
               <div class="col-md-3">
-                <input type="checkbox" name="Other8" value="Other" id="otherBalcony">
+                <input type="checkbox" name="Other9" value="Other" id="otherBalcony">
                 <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherBalconyBox">
@@ -471,13 +508,13 @@
                 <input type="checkbox" name="Washing Machine" value="Washing Machine">
                 <label>Washing Machine</label>
               </div>
-              <div class="col-sm-4">
-                <input type="checkbox" name="Other9" value="Other" id="otherAmenities">
-                <label>Other</label>
-              </div>
               <div class="col-sm-4 col-12">
                 <input type="checkbox" name="Kitchen Appliances" value="Kitchen Appliances">
                 <label>Kitchen Appliances</label>
+              </div>
+              <div class="col-sm-4">
+                <input type="checkbox" name="Other10" value="Other" id="otherAmenities">
+                <label>Other</label>
               </div>
               <div class="form-group col-12" style="display: none;" id="otherAmenitiesBox">
                 <input type="text" name="Other Amenities" class="form-control" placeholder="Other Amenities">
@@ -558,6 +595,7 @@
       }
     });
 
+
     const otherPropertyTypology = document.getElementById('otherPropertyTypology');
     const otherPropertyTypologyBox = document.getElementById('otherPropertyTypologyBox');
 
@@ -568,6 +606,18 @@
         otherPropertyTypologyBox.style.display = 'none';
       }
     });
+
+    const otherFloor = document.getElementById('otherFloor');
+    const otherFloorBox = document.getElementById('otherFloorBox');
+
+    otherFloor.addEventListener('change', function () {
+      if (this.checked) {
+        otherFloorBox.style.display = 'block';
+      } else {
+        otherFloorBox.style.display = 'none';
+      }
+    });
+
 
     const otherAvailability = document.getElementById('otherAvailability');
     const otherAvailabilityBox = document.getElementById('otherAvailabilityBox');
