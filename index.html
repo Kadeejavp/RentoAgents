@@ -527,9 +527,11 @@
     const scriptURL = "https://script.google.com/macros/s/AKfycbxHYenpbIP6CI7W3MyIF2KPxNAI5gA5jAcNvNgRXxzl1TzMholModgBHQMAnLiRIQuZ/exec"
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
+    const submitButton = form.querySelector('input[type="submit"]')
 
     form.addEventListener('submit', e => {
       e.preventDefault()
+      submitButton.disabled = true
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
           msg.innerHTML = "Details Collected"
@@ -537,8 +539,12 @@
             msg.innerHTML = ""
           }, 5000)
           form.reset()
+          submitButton.disabled = false
         })
-        .catch(error => console.error('Error!', error.message))
+        .catch(error => {
+          console.error('Error!', error.message)
+          submitButton.disabled = false
+        })
     })
 
     const otherAvailableFor = document.getElementById('otherAvailableFor');
